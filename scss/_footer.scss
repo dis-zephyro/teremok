@@ -1,0 +1,74 @@
+.footer {
+	height: 100px;
+	background: #fff;
+	padding-top: 20px;
+
+	.column {
+		float: left;
+		width: 330px;
+	}
+
+	.copy {
+		color: #161616;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 15px;
+		margin-bottom: 15px;
+	}
+
+	.footer__contact {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			color: #161616;
+			font-size: 13px;
+			font-weight: 300;
+
+			strong {
+				font-size: 15px;
+				color: #161616;
+				font-weight: 500;
+			}
+
+			&:first-child {
+				color: #161616;
+				font-size: 16px;
+				font-weight: 700;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.call-title {
+		color: #383838;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.footer__tel {
+		padding-top: 5px;
+		color: #2a2a2a;
+		font-size: 28px;
+		line-height: 30px;
+		display: block;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.btn-net {
+		color: #2a2a2a;
+		text-align: right;
+		font-size: 15px;
+		line-height: 18px;
+		padding-top: 5px;
+		padding-right: 34px;
+		display: inline-block;
+		text-decoration: none;
+		background: url("../img/icon_vk_footer.png") right center no-repeat;
+	}
+}

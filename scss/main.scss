@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
+
+@import "_fonts";
+
+// Mixins
+
+@import "mixins/clearfix";
+@import "mixins/gradients";
+@import "mixins/image";
+@import "mixins/opacity";
+@import "mixins/vendor-prefixes";
+@import "mixins/center-block";
+
+@import "components/utilities";
+@import "components/buttons";
+@import "components/forms";
+@import "components/responsive-embed";
+
+@import "../js/vendor/slick/slick";
+
+@import "footer";
+@import "block01";
+@import "block02";
+@import "block03";
+@import "block04";
+@import "block05";
+@import "block06";
+@import "block07";
+@import "block08";
+@import "block09";
+@import "block10";
+
+
+/* Base styles
+   ========================= */
+
+* {
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #252525;
+
+}
+
+body {
+    font-size: 14px;
+    background: #fff;
+    position: relative;
+    font-family: 'BloggerSans', sans-serif;
+}
+
+.container {
+    width: 1020px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+h2 {
+    color: #252525;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.btn-up {
+    bottom: 60px;
+    right: 30px;
+    width: 58px;
+    height: 73px;
+    position: fixed;
+    cursor: pointer;
+    background: url("../img/btn-up.png") 0 0 no-repeat;
+
+    &:hover {
+        background-position: -58px 0;
+    }
+}
+
+
+.fancybox-skin {
+    background: transparent;
+}
+
+
+.done {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: table;
+
+    body {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: table-cell;
+        position: relative;
+        background: #f3f0e9;
+        vertical-align: middle;
+    }
+
+    .done__head {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .done__title {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .done__text {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-top: 40px;
+    }
+}

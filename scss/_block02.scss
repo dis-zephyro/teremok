@@ -1,0 +1,122 @@
+.b02 {
+	padding-bottom: 40px;
+
+	.motive {
+		padding: 0;
+		list-style: none;
+		margin: -70px -15px 0 -15px;
+
+		li {
+			float: left;
+			width: 255px;
+			height: 255px;
+			padding: 0 51px;
+		}
+
+		.motive__title {
+			width: 153px;
+			height: 153px;
+			display: block;
+			color: #9ac8d7;
+			padding: 20px 0;
+			font-size: 68px;
+			font-weight: 700;
+			background: #fff;
+			text-align: center;
+			line-height: 113px;
+			@include border-radius(50%)
+		}
+
+		.motive__text {
+			display: block;
+			color: #252525;
+			font-size: 17px;
+			line-height: 20px;
+			text-align: center;
+			margin-top: -40px;
+		}
+	}
+
+	h2 {
+		margin-bottom: 15px;
+	}
+
+	.sub-title {
+		font-size: 21px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.advantage {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			float: left;
+			width: 330px;
+			height: 220px;
+			font-size: 17px;
+			font-weight: 700;
+			line-height: 20px;
+			text-align: center;
+			position: relative;
+			padding-top: 175px;
+
+			&.item0 {
+				padding-top: 20px;
+
+				&:before {
+					top: 20px;
+					right: -90px;
+					width: 135px;
+					height: 138px;
+					content: ' ';
+					position: absolute;
+					background: url("../img/push.png") 0 0 no-repeat;
+				}
+			}
+
+			&.item1 {
+				background: url("../img/b02_img1.jpg") 50% 55px no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b02_img2.jpg") 50% 45px no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b02_img3.jpg") 50% 30px no-repeat;
+			}
+
+			&.item4 {
+				background: url("../img/b02_img4.jpg") 50% 30px no-repeat;
+			}
+
+			&.item5 {
+				background: url("../img/b02_img5.jpg") 50% 35px no-repeat;
+			}
+
+			.circle {
+				width: 224px;
+				height: 224px;
+				display: table;
+				margin: 0 auto;
+				background: #f4e36e;
+				@include border-radius(50%);
+
+				span {
+					width: 224px;
+					height: 224px;
+					font-size: 14px;
+					padding: 0 15px;
+					line-height: 18px;
+					font-weight: 400;
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

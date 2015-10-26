@@ -1,0 +1,56 @@
+.b08 {
+	height: 380px;
+	overflow: hidden;
+
+	.gallery {
+		width: 580px;
+		margin: 0 auto;
+		position: relative;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				float: left;
+				width: 580px;
+				opacity: .5;
+				border-left: 5px solid #fff;
+				border-right: 5px solid #fff;
+
+				img {
+
+				}
+
+				&.slick-current {
+					opacity: 1;
+				}
+			}
+		}
+
+		.gallery__nav {
+			top: 156px;
+			width: 68px;
+			height: 68px;
+			z-index: 100;
+			cursor: pointer;
+			position: absolute;
+			background: url("../img/gallery_nav.png") no-repeat;
+
+			&.prev {
+				left: -30px;
+				background-position: 0 0;
+			}
+
+			&.next {
+				right: -30px;
+				background-position: -68px 0;
+			}
+		}
+
+		.slick-list {
+			overflow: inherit;
+		}
+	}
+}

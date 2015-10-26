@@ -1,0 +1,123 @@
+.b03 {
+	background: #f4e36d url("../img/b03_bg.jpg") bottom center no-repeat;
+
+	h2 {
+		font-size: 34px;
+		padding-top: 45px;
+		margin-bottom: 25px;
+	}
+
+	.specialist {
+		position: relative;
+
+		.specialist__center {
+			top: 105px;
+			left: 365px;
+			width: 263px;
+			height: 280px;
+			color: #1a1a1a;
+			font-size: 19px;
+			font-weight: 700;
+			line-height: 24px;
+			padding-top: 60px;
+			position: absolute;
+			text-align: center;
+			padding-left: 10px;
+			text-transform: uppercase;
+			background: url("../img/specialist__center.png") 0 0 no-repeat;
+		}
+	}
+
+	.person {
+		width: 320px;
+		text-align: center;
+
+		&.person__one {
+			float: left;
+		}
+
+		&.person__two {
+			float: right;
+		}
+
+		&.person__three {
+			width: 100%;
+			text-align: left;
+			padding-top: 45px;
+			padding-bottom: 60px;
+
+			.person__img {
+				float: left;
+				width: 215px;
+			}
+
+			.person__name {
+				margin-right: 35px;
+				display: inline-block;
+			}
+
+			.person__left {
+				float: right;
+				width: 740px;
+				padding-bottom: 20px;
+			}
+		}
+
+		.person__img {
+			margin-bottom: 5px;
+		}
+
+		.person__name {
+			padding: 5px 0;
+			font-size: 19px;
+			font-weight: 700;
+			line-height: 20px;
+		}
+
+		.person__certificate {
+			color: #fff;
+			border: none;
+			outline: none;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 20px;
+			padding: 5px 10px;
+			text-align: center;
+			margin-bottom: 20px;
+			display: inline-block;
+			background: #9ac8d7;
+			text-decoration: none;
+			@include border-radius(4px);
+
+			&:hover {
+				background: #1ea6d3;
+				text-decoration: none;
+			}
+		}
+
+		.person__slogan {
+			font-size: 15px;
+			text-align: left;
+			margin-bottom: 10px;
+		}
+
+		.person__text {
+			max-height: 90px;
+			font-size: 15px;
+			overflow: hidden;
+			text-align: left;
+			font-style: italic;
+			margin-bottom: 10px;
+		}
+
+		.person__more {
+			color: #000;
+			float: left;
+			font-size: 15px;
+			font-weight: 700;
+			text-align: left;
+			text-decoration: none;
+			border-bottom: 1px solid #cabc5a;
+		}
+	}
+}

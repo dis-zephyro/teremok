@@ -1,0 +1,39 @@
+.b04 {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background: #fff url("../img/b04_bg.jpg") bottom center no-repeat;
+
+	.title {
+		color: #dd6a82;
+		font-size: 62px;
+		font-weight: 700;
+		line-height: 70px;
+		text-align: center;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+
+	.sub-title {
+		color: #303030;
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.b04_form {
+		width: 350px;
+		margin: 0 auto;
+		padding: 12px;
+		text-align: center;
+		@include border-radius(10px);
+		background: url("../img/b01_form.png");
+
+		.form-inner {
+			padding: 22px 18px;
+			background: #bbdde8;
+			border: 1px solid #b0d0db;
+		}
+	}
+}
