@@ -175,4 +175,16 @@ label {
 			background: url("../img/icon_phone.png") 12px 50% no-repeat;
 		}
 	}
+
+	.red {
+
+		.form-control {
+			border-color: #ff0000;
+
+			&.invert {
+				border-color: #ff0000;
+			}
+		}
+	}
+
 }

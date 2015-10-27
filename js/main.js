@@ -185,4 +185,22 @@ $(document).ready(function() {
         }
     });
 
+
+    $(".scroll").each(function () { // анимация по скролу(используйте этот) достаточно добавить анимируемому блоку класс 'scroll' а css анимацию писать так: '.animated.класс_блока'
+        var block = $(this);
+        $(window).scroll(function() {
+            var top = block.offset().top;
+            var bottom = block.height()+top;
+            top = top - $(window).height();
+            var scroll_top = $(this).scrollTop();
+            if ((scroll_top > top) && (scroll_top < bottom)) {
+                if (!block.hasClass("animated")) {
+                    block.addClass("animated");
+                }
+            } else {
+                block.removeClass("animated");
+            }
+        });
+    });
+
 });

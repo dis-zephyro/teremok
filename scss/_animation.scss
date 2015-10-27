@@ -1,0 +1,26 @@
+.person,
+.specialist__center {
+	opacity: 0;
+}
+
+
+.animated.specialist__center {
+	-webkit-animation: scaleUp .3s .5s forwards;
+	animation: scaleUp .3s .5s forwards;
+}
+
+.animated.person.person__one {
+	-webkit-animation: scaleUp .4s 1.5s forwards;
+	animation: scaleUp .4s 1.5s forwards;
+}
+
+.animated.person.person__two {
+	-webkit-animation: scaleUp .4s 1.5s forwards;
+	animation: scaleUp .4s 1.5s forwards;
+}
+
+.animated.person.person__three {
+	-webkit-animation: scaleUp .4s 1.5s forwards;
+	animation: scaleUp .4s 1.5s forwards;
+}
+
