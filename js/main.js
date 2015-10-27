@@ -198,7 +198,7 @@ $(document).ready(function() {
                     block.addClass("animated");
                 }
             } else {
-                block.removeClass("animated");
+              //  block.removeClass("animated");
             }
         });
     });

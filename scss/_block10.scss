@@ -5,6 +5,7 @@
 		left: 0;
 		right: 0;
 		top: 60px;
+		z-index: 30;
 		font-size: 48px;
 		line-height: 50px;
 		position: absolute;
@@ -23,6 +24,7 @@
 				float: left;
 				width: 340px;
 				outline: none;
+				opacity: .6;
 
 				a {
 					width: 100%;
@@ -34,6 +36,14 @@
 					padding-top: 460px;
 					text-align: center;
 					text-decoration: none;
+				}
+
+				&:hover {
+					opacity: 1;
+				}
+
+				&.ui-tabs-active {
+					opacity: 1;
 				}
 
 				&.item1 {
