@@ -351,6 +351,25 @@ label {
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
 
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+
 /* Wobble Vertical */
 @-webkit-keyframes hvr-wobble-vertical {
   16.65% {
@@ -651,7 +670,7 @@ label {
       text-align: center;
       margin-top: -40px; }
   .b02 h2 {
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
   .b02 .sub-title {
     font-size: 21px;
     font-weight: 700;
@@ -665,14 +684,19 @@ label {
     .b02 .advantage li {
       float: left;
       width: 330px;
-      height: 220px;
+      height: 235px;
       font-size: 17px;
       font-weight: 700;
       line-height: 20px;
       text-align: center;
-      padding-top: 175px; }
+      padding-top: 175px;
+      position: relative; }
       .b02 .advantage li:hover .circle {
         display: table; }
+      .b02 .advantage li:hover i {
+        display: none; }
+      .b02 .advantage li.item0 {
+        background: url("../img/b02_img0.jpg") 50% 55px no-repeat; }
       .b02 .advantage li.item1 {
         background: url("../img/b02_img1.jpg") 50% 55px no-repeat; }
       .b02 .advantage li.item2 {
@@ -683,13 +707,16 @@ label {
         background: url("../img/b02_img4.jpg") 50% 30px no-repeat; }
       .b02 .advantage li.item5 {
         background: url("../img/b02_img5.jpg") 50% 35px no-repeat; }
+      .b02 .advantage li i {
+        font-style: normal; }
       .b02 .advantage li .circle {
         top: 0;
         left: 55px;
-        width: 224px;
-        height: 224px;
+        width: 230px;
+        height: 230px;
         margin: 0 auto;
         display: none;
+        z-index: 50;
         position: absolute;
         background: #f4e36e;
         -webkit-border-radius: 50%;
@@ -699,9 +726,9 @@ label {
         .b02 .advantage li .circle span {
           width: 224px;
           height: 224px;
-          font-size: 14px;
-          padding: 0 15px;
-          line-height: 18px;
+          font-size: 12px;
+          padding: 0 20px;
+          line-height: 15px;
           font-weight: 400;
           display: table-cell;
           vertical-align: middle; }
