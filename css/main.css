@@ -810,7 +810,6 @@ label {
       text-align: left;
       margin-bottom: 10px; }
     .b03 .person .person__text {
-      max-height: 90px;
       font-size: 15px;
       overflow: hidden;
       text-align: left;
