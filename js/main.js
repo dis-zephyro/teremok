@@ -89,12 +89,12 @@ var myMap1,
 
 function init(){
     myMap1 = new ymaps.Map("map1", {
-        center: [55.8694,49.1043],
-        zoom: 14,
+        center: [55.7654,49.2369],
+        zoom: 15,
         controls: ['smallMapDefaultSet']
     });
 
-    myPlacemark1 = new ymaps.Placemark([55.8655,49.1041], {
+    myPlacemark1 = new ymaps.Placemark([55.7605,49.2368], {
         hintContent: ''
     }, {
         iconLayout: 'default#image',
@@ -112,7 +112,7 @@ function init(){
 
     myMap2 = new ymaps.Map("map2", {
         center: [55.7871,49.2398],
-        zoom: 14,
+        zoom: 15,
         controls: ['smallMapDefaultSet']
     });
 
@@ -134,7 +134,7 @@ function init(){
 
     myMap3 = new ymaps.Map("map3", {
         center: [55.8060,49.1932],
-        zoom: 14,
+        zoom: 15,
         controls: ['smallMapDefaultSet']
     });
 
